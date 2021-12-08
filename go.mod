@@ -1,5 +1,5 @@
-module github.com/akmaljalilov/stats
+module github.com/akmaljalilov/stats/v2
 
 go 1.17
 
-require github.com/akmaljalilov/bank v0.0.0-20211207054201-c85844490c09
+require github.com/akmaljalilov/bank/v2 v2.0.1 // indirect
