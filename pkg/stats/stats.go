@@ -1,27 +1,28 @@
 package stats
 
-import "github.com/akmaljalilov/bank/v2/pkg/types"
+import "github.com/akmaljalilov/bank/pkg/types"
 
-func Avg(payments []types.Payment) types.Money {
-	ser := types.Money(0)
-	for _, payment := range payments {
-		if payment.Status != "StatusFail" {
-			ser += payment.Amount
-		}
-	}
-	return types.Money(int(ser) / len(payments))
-}
-func TotalInCategory(payments []types.Payment, category types.Category) types.Money {
-	sum := types.Money(0)
-	for _, payment := range payments {
-		if payment.Category == category {
-			if payment.Status != "StatusFail" {
-				sum += payment.Amount
-			}
-		}
-	}
-	return sum
-}
+//
+//func Avg(payments []types.Payment) types.Money {
+//	ser := types.Money(0)
+//	for _, payment := range payments {
+//		if payment.Status != "StatusFail" {
+//			ser += payment.Amount
+//		}
+//	}
+//	return types.Money(int(ser) / len(payments))
+//}
+//func TotalInCategory(payments []types.Payment, category types.Category) types.Money {
+//	sum := types.Money(0)
+//	for _, payment := range payments {
+//		if payment.Category == category {
+//			if payment.Status != "StatusFail" {
+//				sum += payment.Amount
+//			}
+//		}
+//	}
+//	return sum
+//}
 
 func CategoriesAvg(payments []types.Payment) map[types.Category]types.Money {
 	res := map[types.Category]types.Money{}
