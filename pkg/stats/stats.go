@@ -1,6 +1,6 @@
 package stats
 
-import "github.com/akmaljalilov/bank/pkg/types"
+import "github.com/akmaljalilov/bank/v2/pkg/types"
 
 //
 //func Avg(payments []types.Payment) types.Money {

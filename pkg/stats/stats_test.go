@@ -1,7 +1,7 @@
 package stats
 
 import (
-	"github.com/akmaljalilov/bank/pkg/types"
+	"github.com/akmaljalilov/bank/v2/pkg/types"
 	"reflect"
 	"testing"
 )
